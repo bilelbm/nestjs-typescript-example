@@ -4,7 +4,7 @@ dotenv.config()
 
 export const NODE_ENV = process.env.NODE_ENV || 'development'
 export const PORT = process.env.PORT || 8000
-export const CORS_WHITELIST = process.env.CORS_WHITELIST.split(',') || []
+export const CORS_WHITELIST = process.env.CORS_WHITELIST?.split(',') || []
 
 export const JWT_SECRET = process.env.JWT_SECRET || 'jwt-secret-k3y'
 export const SESSION_SECRET = process.env.SESSION_SECRET || 's3ssi0n-secret-k3y'
